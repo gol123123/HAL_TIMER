@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"hal_timer\main.o"
+"hal_timer\stm32f1xx_it.o"
+"hal_timer\stm32f1xx_hal_msp.o"
+"hal_timer\stm32f1xx_hal_gpio_ex.o"
+"hal_timer\stm32f1xx_hal_tim.o"
+"hal_timer\stm32f1xx_hal_tim_ex.o"
+"hal_timer\stm32f1xx_hal.o"
+"hal_timer\stm32f1xx_hal_rcc.o"
+"hal_timer\stm32f1xx_hal_rcc_ex.o"
+"hal_timer\stm32f1xx_hal_gpio.o"
+"hal_timer\stm32f1xx_hal_dma.o"
+"hal_timer\stm32f1xx_hal_cortex.o"
+"hal_timer\stm32f1xx_hal_pwr.o"
+"hal_timer\stm32f1xx_hal_flash.o"
+"hal_timer\stm32f1xx_hal_flash_ex.o"
+"hal_timer\stm32f1xx_hal_exti.o"
+"hal_timer\system_stm32f1xx.o"
+"hal_timer\startup_stm32f103xb.o"
+--strict --scatter "HAL_TIMER\HAL_TIMER.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "./HAL_TIMER/\HAL_TIMER.map" -o HAL_TIMER\HAL_TIMER.axf
